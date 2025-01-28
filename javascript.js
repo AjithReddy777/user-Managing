@@ -87,10 +87,10 @@ function editUser(userId) {
     const Address = user.cells[4].textContent;
 
     document.getElementById('formTitle').textContent = 'Edit User';
-    document.getElementById('firstName').value = firstName;
-    document.getElementById('lastName').value = lastName;
+    document.getElementById('firstName').value = Name;
+    document.getElementById('lastName').value = userName;
     document.getElementById('email').value = email;
-    document.getElementById('department').value = department;
+    document.getElementById('department').value = Address;
 
     document.getElementById('formContainer').setAttribute('data-user-id', userId);
     document.getElementById('formContainer').style.display = 'block';
