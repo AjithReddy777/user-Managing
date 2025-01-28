@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+    <link rel="stylesheet" href="style.css"/></head>
+</head>
+
+<body>
+
+    <h1>User Management</h1>
+    <button id="addUserButton">Add User</button>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                 <th>Street</th>
+                  <th>Zip Code</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <!-- User form for adding or editing -->
+    <div class="form-container" id="formContainer" style="display: none;">
+        <h2 id="formTitle">Add User</h2>
+        <form id="userForm">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="department">Department:</label><br>
+            <input type="text" id="department" name="department" required><br><br>
+            <input type="submit" value="Submit">
+            
+            
+        </form>
+    </div>
+    <script src="javascript.js"></script>
+    
+</body>
+
+</html>
